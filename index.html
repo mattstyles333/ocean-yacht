@@ -131,6 +131,8 @@
     </script>
     
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js" defer></script>
 </head>
 <body class="bg-gradient-to-br from-slate-100 to-blue-50">
     <!-- Sticky Navigation -->
@@ -226,6 +228,46 @@
                     <div class="text-center bg-gray-50 p-6 rounded-lg">
                         <p class="text-2xl text-gray-800 mb-2">Priced at <strong class="text-blue-600">$299,900</strong></p>
                         <p class="text-gray-600">Direct owner sale</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Tour Section -->
+        <section class="py-16 bg-gradient-to-br from-slate-900 to-blue-900">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-8">
+                    <h2 class="text-4xl font-bold text-white mb-4">Take a Virtual Tour</h2>
+                    <p class="text-xl text-blue-200">Experience "Tunar" from the comfort of your home</p>
+                </div>
+                
+                <div class="max-w-5xl mx-auto">
+                    <div class="relative rounded-xl overflow-hidden shadow-2xl">
+                        <video 
+                            class="w-full h-auto" 
+                            autoplay 
+                            muted 
+                            loop 
+                            playsinline
+                            poster="imgs/Full Image.jpeg"
+                        >
+                            <source src="boat_tour.webm" type="video/webm">
+                            <p class="text-white p-8 text-center">
+                                Your browser doesn't support HTML5 video. 
+                                <a href="boat_tour.webm" class="text-blue-300 hover:text-blue-100 underline">Download the video</a> instead.
+                            </p>
+                        </video>
+                        
+                        <!-- Video overlay controls (optional) -->
+                        <div class="absolute bottom-4 right-4">
+                            <div class="bg-black/50 backdrop-blur-sm rounded-lg px-3 py-2">
+                                <span class="text-white text-sm">🎥 Virtual Boat Tour</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-6">
+                        <p class="text-blue-200 text-lg">See every detail of this magnificent yacht</p>
                     </div>
                 </div>
             </div>
@@ -462,20 +504,121 @@
                     
                     <!-- Responsive Photo Grid -->
                     <div class="grid md:grid-cols-3 gap-4">
-<img src="imgs/cruise.jpg" 
-                             alt="Ocean Yacht 56ft cruising offshore" 
-                             class="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
-                             loading="lazy">
+                        <!-- Exterior Views -->
+                        <a href="imgs/yacht-exterior-01.jpg" class="glightbox" data-gallery="yacht-gallery">
+                            <img src="imgs/yacht-exterior-01.jpg" alt="Starboard bow view at anchor" class="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" loading="lazy">
+                        </a>
                         
-                        <img src="imgs/cruise2.jpg" 
-                             alt="Ocean Yacht 56ft at sea" 
-                             class="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
-                             loading="lazy">
+                        <a href="imgs/Full Image.jpeg" class="glightbox" data-gallery="yacht-gallery">
+                            <img src="imgs/Full Image.jpeg" alt="Full profile view of Ocean Yacht 56" class="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" loading="lazy">
+                        </a>
                         
-                        <img src="imgs/underway.jpg"
-                             alt="Ocean Yacht 56ft underway" 
-                             class="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
-                             loading="lazy">
+                        <a href="imgs/cruise.jpg" class="glightbox" data-gallery="yacht-gallery">
+                            <img src="imgs/cruise.jpg" alt="Ocean Yacht 56ft cruising offshore" class="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" loading="lazy">
+                        </a>
+                        
+                        <a href="imgs/cruise2.jpg" class="glightbox" data-gallery="yacht-gallery">
+                            <img src="imgs/cruise2.jpg" alt="Ocean Yacht 56ft at sea" class="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" loading="lazy">
+                        </a>
+                        
+                        <a href="imgs/sailing1.jpg" class="glightbox" data-gallery="yacht-gallery">
+                            <img src="imgs/sailing1.jpg" alt="Ocean Yacht under sail" class="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" loading="lazy">
+                        </a>
+                        
+                        <!-- Running Views -->
+                        <a href="imgs/underway.jpg" class="glightbox" data-gallery="yacht-gallery">
+                            <img src="imgs/underway.jpg" alt="Ocean Yacht 56ft underway" class="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" loading="lazy">
+                        </a>
+                        
+                        <a href="imgs/1999-ocean-yachts-56-super-sport-power-9489162-966438283-0-310720240611-0.jpg" class="glightbox" data-gallery="yacht-gallery">
+                            <img src="imgs/1999-ocean-yachts-56-super-sport-power-9489162-966438283-0-310720240611-0.jpg" alt="Ocean Yacht running at speed" class="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" loading="lazy">
+                        </a>
+                        
+                        <a href="imgs/1999-ocean-yachts-56-super-sport-power-9489162-966438284-0-310720240611-1.jpg" class="glightbox" data-gallery="yacht-gallery">
+                            <img src="imgs/1999-ocean-yachts-56-super-sport-power-9489162-966438284-0-310720240611-1.jpg" alt="Ocean Yacht performance shot" class="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" loading="lazy">
+                        </a>
+                        
+                        <a href="imgs/1999-ocean-yachts-56-super-sport-power-9489162-966438285-0-310720240612-2.jpg" class="glightbox" data-gallery="yacht-gallery">
+                            <img src="imgs/1999-ocean-yachts-56-super-sport-power-9489162-966438285-0-310720240612-2.jpg" alt="Ocean Yacht wake shot" class="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" loading="lazy">
+                        </a>
+                        
+                        <!-- Cockpit -->
+                        <a href="imgs/cockpit1.jpg" class="glightbox" data-gallery="yacht-gallery">
+                            <img src="imgs/cockpit1.jpg" alt="Tournament-ready cockpit with fighting chair" class="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" loading="lazy">
+                        </a>
+                        
+                        <!-- Helm -->
+                        <a href="imgs/Helm.jpg" class="glightbox" data-gallery="yacht-gallery">
+                            <img src="imgs/Helm.jpg" alt="Main helm station with electronics" class="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" loading="lazy">
+                        </a>
+                        
+                        <a href="imgs/helm2.jpg" class="glightbox" data-gallery="yacht-gallery">
+                            <img src="imgs/helm2.jpg" alt="Helm controls and navigation equipment" class="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" loading="lazy">
+                        </a>
+                        
+                        <a href="imgs/helm3.jpg" class="glightbox" data-gallery="yacht-gallery">
+                            <img src="imgs/helm3.jpg" alt="Helm seating and instrument panel" class="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" loading="lazy">
+                        </a>
+                        
+                        <!-- Salon -->
+                        <a href="imgs/Interior1.jpg" class="glightbox" data-gallery="yacht-gallery">
+                            <img src="imgs/Interior1.jpg" alt="Main salon with new carpet and furnishings" class="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" loading="lazy">
+                        </a>
+                        
+                        <a href="imgs/interior2.jpg" class="glightbox" data-gallery="yacht-gallery">
+                            <img src="imgs/interior2.jpg" alt="Salon dining area and entertainment center" class="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" loading="lazy">
+                        </a>
+                        
+                        <a href="imgs/interior3.jpg" class="glightbox" data-gallery="yacht-gallery">
+                            <img src="imgs/interior3.jpg" alt="Salon seating area with teak cabinetry" class="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" loading="lazy">
+                        </a>
+                        
+                        <a href="imgs/interior4.jpg" class="glightbox" data-gallery="yacht-gallery">
+                            <img src="imgs/interior4.jpg" alt="Interior view showing quality finishes" class="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" loading="lazy">
+                        </a>
+                        
+                        <a href="imgs/interior5.jpg" class="glightbox" data-gallery="yacht-gallery">
+                            <img src="imgs/interior5.jpg" alt="Interior lighting and decor" class="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" loading="lazy">
+                        </a>
+                        
+                        <a href="imgs/seating.jpg" class="glightbox" data-gallery="yacht-gallery">
+                            <img src="imgs/seating.jpg" alt="Comfortable seating area" class="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" loading="lazy">
+                        </a>
+                        
+                        <a href="imgs/crew.jpg" class="glightbox" data-gallery="yacht-gallery">
+                            <img src="imgs/crew.jpg" alt="Interior crew area" class="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" loading="lazy">
+                        </a>
+                        
+                        <!-- Galley -->
+                        <a href="imgs/galley1.jpg" class="glightbox" data-gallery="yacht-gallery">
+                            <img src="imgs/galley1.jpg" alt="Modern galley with new LVT flooring" class="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" loading="lazy">
+                        </a>
+                        
+                        <a href="imgs/galley2.jpg" class="glightbox" data-gallery="yacht-gallery">
+                            <img src="imgs/galley2.jpg" alt="Galley appliances and storage" class="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" loading="lazy">
+                        </a>
+                        
+                        <!-- Staterooms -->
+                        <a href="imgs/Master1.jpg" class="glightbox" data-gallery="yacht-gallery">
+                            <img src="imgs/Master1.jpg" alt="Full-beam master stateroom with king bed" class="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" loading="lazy">
+                        </a>
+                        
+                        <a href="imgs/master2.jpg" class="glightbox" data-gallery="yacht-gallery">
+                            <img src="imgs/master2.jpg" alt="Master stateroom storage and amenities" class="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" loading="lazy">
+                        </a>
+                        
+                        <!-- Engine Room -->
+                        <a href="imgs/engineroom1.jpg" class="glightbox" data-gallery="yacht-gallery">
+                            <img src="imgs/engineroom1.jpg" alt="Twin Cat 3406 engines with recent service" class="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" loading="lazy">
+                        </a>
+                        
+                        <a href="imgs/engineroom2.jpg" class="glightbox" data-gallery="yacht-gallery">
+                            <img src="imgs/engineroom2.jpg" alt="Engine room maintenance access" class="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" loading="lazy">
+                        </a>
+                        
+                        <a href="imgs/engineroom3.jpg" class="glightbox" data-gallery="yacht-gallery">
+                            <img src="imgs/engineroom3.jpg" alt="Engine room systems and equipment" class="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" loading="lazy">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -546,5 +689,15 @@
             </div>
         </section>
     </main>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const lightbox = GLightbox({
+        selector: '.glightbox',
+        touchNavigation: true,
+        loop: true,
+        closeButton: true
+      });
+    });
+    </script>
 </body>
 </html>
